@@ -1,0 +1,399 @@
+/* highlight warna teks saat select */
+::selection {
+    background-color: #D4AF37;
+    color: #ffffff;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #F8F5F0 !important;
+  /* background-color: #1F2D43 !important; */
+}
+
+.bg-cream {
+  background-color: #F8F5F0 !important;
+}
+
+.bg-darkblue {
+  background-color: #1F2D43 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Cormorant Garamond', serif !important;
+}
+
+a,
+p,
+span {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+/* Style untuk judul */
+.heading {
+  text-decoration: underline !important;
+  text-decoration-color: #D4AF37 !important;
+  font-weight: 600 !important;
+}
+
+/* Header Styles */
+header {
+  background: rgba(29, 42, 59, 0.677);
+  backdrop-filter: blur(10px) !important;
+}
+
+.navbar {
+  padding: 1rem 0;
+  transition: all 0.3s ease;
+}
+
+.navbar-brand {
+  font-family: 'Cormorant Garamond', serif !important;
+  text-transform: uppercase !important;
+  font-size: 1.5rem !important;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: white !important;
+}
+
+.navbar-toggler {
+  border: 3px solid #D4AF37 !important;
+}
+
+.nav-link {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  margin-right: 5px;
+  color: white !important;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #D4AF37 !important;
+}
+
+.nav-link.active {
+  color: #D4AF37 !important;
+  font-weight: 700;
+}
+
+/* Book Now Style */
+.btn-book-now {
+  background-color: #D4AF37 !important;
+  color: white !important;
+  font-family: 'Cormorant Garamond', serif !important;
+  font-weight: bold !important;
+  font-size: 18px !important;
+  text-transform: uppercase !important;
+  border: #D4AF37 2px solid !important;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-book-now:hover {
+  background-color: #ffffff00 !important;
+  color: #D4AF37 !important;
+  border: #D4AF37 2px solid !important;
+}
+
+/* Hero Carousel */
+.carousel-item img {
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.hero-overlay h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero-overlay p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+/* Carousel Controls Style Home */
+.control-style {
+  background-color: #000 !important;
+  height: 60px !important;
+  width: 60px !important;
+  border-radius: 50% !important;
+}
+
+/* Pagination dot Carousel Home */
+.pagination-dot {
+  display: inline-block;
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50%;
+  background-color: transparent !important;
+  cursor: pointer;
+  transition: 0.5s ease !important;
+  border: 1px solid rgb(255, 255, 255) !important;
+  background-color: rgba(115, 115, 115, 0.567) !important;
+}
+
+.pagination-dot.active {
+  background-color: #D4AF37 !important;
+  border: none !important;
+  width: 12px !important;
+  height: 12px !important;
+
+}
+
+.pagination-dot:hover {
+  background-color: #d4af37e2 !important;
+  transition: 0.5s ease-out;
+  border: rgba(255, 255, 255, 0.074);
+}
+
+/* Booking Form Responsiveness */
+.booking-form {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.133);
+  backdrop-filter: blur(5px);
+  padding: 15px;
+  border: #fff 3px solid;
+  max-width: 1000px;
+  width: 95%;
+}
+
+.booking-label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.booking-input {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 8px;
+  font-family: 'cormorant garamond', serif;
+  font-size: 0.95rem;
+}
+
+.booking-input:focus {
+  border-color: #D4AF37;
+  box-shadow: 0 0 5px rgba(212, 175, 55, 0.5);
+}
+
+.booking-btn {
+  background: #D4AF37;
+  color: #fff;
+  border-radius: 6px;
+  font-weight: 600;
+  padding: 12px;
+}
+
+.booking-btn:hover {
+  background: #b9972c;
+}
+
+/* Hero overlay text responsive */
+.hero-overlay h1 {
+  font-size: 3rem;
+}
+
+.hero-overlay p {
+  font-size: 1.1rem;
+}
+
+/* Mobile fix */
+@media (max-width: 768px) {
+  .booking-form {
+    position: static;
+    transform: none;
+    margin: 20px auto 0 auto;
+    width: 100%;
+  }
+}
+
+/* About Section Style */
+.about-images img {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.286);
+}
+
+.img-top {
+  width: 70%;
+  position: relative;
+  z-index: 1;
+}
+
+.img-bottom {
+  width: 70%;
+  position: absolute;
+  bottom: -10px;
+  left: 100px;
+  z-index: 5;
+}
+
+.btn-gold {
+  background-color: #d4af37 !important;
+  color: #fff !important;
+  border: 1px solid #d4af37 !important;
+  transition: 0.3s;
+}
+
+.btn-gold:hover {
+  background-color: #ffffff00 !important;
+  border: 1px solid #d4af37 !important;
+  color: #d4af37 !important;
+}
+
+@media (max-width: 768px) {
+
+  .img-top,
+  .img-bottom {
+    width: 100%;
+    position: relative;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+/* Rooms & Rates Style */
+.section1 {
+  background: url('img/bg-icon.png') no-repeat center center;
+  background-size: cover;
+}
+
+.room-nav.sticky-top {
+  top: 90px !important;
+  /* Ganti sesuai tinggi navbar*/
+  z-index: 1020;
+  /* Agar di atas konten lain, di bawah navbar */
+}
+
+.star i {
+  color: #E4A853 !important;
+}
+
+.img-rooms {
+  height: 300px !important;
+  object-fit: cover !important;
+}
+
+/* Gallery Section Style*/
+.gallery-img {
+  border-radius: 8px;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Booking Form Section Style */
+.contact-form {
+  background-color: #132742;
+  color: #fff;
+  padding: 30px;
+}
+
+.contact-info i {
+  color: #d4a32c;
+  margin-right: 10px;
+}
+
+.form-contact {
+  border-radius: 0 !important;
+  margin-bottom: 15px !important;
+}
+
+/* Footer Section Style */
+.heading-footer{
+  background: url('img/Hero2.png') no-repeat center center;
+  background-size: cover;
+}
+
+.link-footers a {
+  color: #fff !important;
+  text-decoration: none !important;
+  transition: color 0.3s ease;
+}
+
+.link-footers a:hover {
+  color: #D4AF37 !important;
+  text-decoration: none !important;
+}
+.link-footers li {
+  margin-bottom: 5px !important;
+}
+
+/* Offset navbar fixed-top khusus halaman Rooms */
+.page-rooms {
+  padding-top: 90px; /* samakan dengan tinggi navbar */
+}
+
+/* Kartu Rooms seragam tinggi dan rapi */
+.rooms-grid .card {
+  border-radius: 10px;
+}
+
+/* Sesuaikan tinggi gambar agar proporsional di berbagai device */
+@media (max-width: 992px) {
+  .img-rooms { height: 240px !important; }
+}
+@media (max-width: 576px) {
+  .img-rooms { height: 200px !important; }
+}
+
+/* Judul kartu responsif */
+.rooms-grid .card-title {
+  font-size: clamp(0.95rem, 1vw + 0.6rem, 1.1rem);
+}
+
+/* Rapikan padding body kartu */
+.rooms-grid .card-body {
+  padding: 0.9rem 1rem;
+}
+
+/* Cegah scroll horizontal global */
+html, body { overflow-x: hidden; }
+
+/* Pastikan child .row bisa mengecil di dalam flex */
+.row > [class^="col-"], .row > [class*=" col-"] { min-width: 0; }
+
+/* Hero carousel: cegah overflow & rapikan tombol */
+#heroCarousel,
+#heroCarousel .carousel-inner,
+#heroCarousel .carousel-item { overflow: hidden; }
+
+#heroCarousel .carousel-control-prev,
+#heroCarousel .carousel-control-next {
+  width: 3rem;               /* override default 15% */
+  height: 3rem;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 !important;      /* netralisir ms-5/me-5 yang dihapus di HTML */
+}
+#heroCarousel .carousel-control-prev { left: 1rem; }
+#heroCarousel .carousel-control-next { right: 1rem; }
+
+/* About images: potong gambar yang overlap agar tidak keluar container */
+.about-images { position: relative; overflow: hidden; }
+.about-images img { max-width: 100%; height: auto; display: block; }
+
+/* Price bar: hilangkan dorongan di mobile */
+@media (max-width: 576px) {
+  .price { flex-wrap: wrap; gap: .75rem; }
+  .price .btn { margin-left: 0 !important; }
+}
