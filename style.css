@@ -83,7 +83,8 @@ header {
 }
 
 /* Book Now Style */
-.btn-book-now {
+.btn-book-now,
+.btn-book-now a {
   background-color: #D4AF37 !important;
   color: white !important;
   font-family: 'Cormorant Garamond', serif !important;
@@ -180,7 +181,7 @@ header {
   font-family: 'Poppins', sans-serif;
   font-size: 1rem;
   font-weight: 600;
-  color: #fff;
+  color: #ffffff;
 }
 
 .booking-input {
@@ -352,8 +353,14 @@ header {
 @media (max-width: 992px) {
   .img-rooms { height: 240px !important; }
 }
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .img-rooms { height: 200px !important; }
+  .booking-label { color: #000000;}
+  .carousel-button{ display: none; }
+  .room-nav { display: none;}
+  .img-bottom { margin-top: 20px;}
+  /* .section1 { height: 250px;} */
+  .icon a img { height: 90px; width: 90px;}
 }
 
 /* Judul kartu responsif */
